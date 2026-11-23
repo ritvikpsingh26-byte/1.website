@@ -1,0 +1,127 @@
+
+
+.logo{
+      display:block;
+      margin: auto;
+      width: 3000;
+}
+
+
+.college-box {
+    width: 90%;
+    margin: 30px auto;
+    padding: 25px;
+
+    border: 2px solid #8b2929;
+    border-radius: 100px;
+
+    background-color: white;
+
+    text-align: center;
+}
+
+.college-box h1 {
+    color: #8b2929;
+    font-size: 35px;
+    text-align: center;
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* Content Section */
+
+.content-container {
+    width: 92%;
+    margin: 30px auto;
+    font-family: Arial, sans-serif;
+}
+
+/* Main Heading */
+
+.content-container h1 {
+    color: #8b2929;
+    font-size: 32px;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: gray;
+    font-size: 15px;
+    margin-bottom: 25px;
+}
+
+/* Two Column Layout */
+
+.content-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px 25px;
+}
+
+/* Individual Cards */
+
+.content-card {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    padding: 13px;
+
+    background-color: #eaf5f8;
+    border: 1px solid #d2dce0;
+    border-radius: 12px;
+
+    box-shadow: 0 3px 5px #cccccc;
+
+    transition: 0.3s;
+}
+
+/* Alternating Background */
+
+.content-card:nth-child(even) {
+    background-color: #fff6dc;
+}
+
+/* Number Box */
+
+.content-card span {
+    background-color: #922c2c;
+    color: white;
+
+    padding: 10px;
+    min-width: 42px;
+
+    text-align: center;
+    border-radius: 7px;
+
+    font-weight: bold;
+}
+
+/* Topic Name */
+
+.content-card h3 {
+    font-size: 16px;
+    color: #333333;
+    margin: 0;
+}
+
+/* Hover Effect */
+
+.content-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px #bbbbbb;
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 650px) {
+
+    .content-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .content-card h3 {
+        font-size: 14px;
+    }
+
+}
